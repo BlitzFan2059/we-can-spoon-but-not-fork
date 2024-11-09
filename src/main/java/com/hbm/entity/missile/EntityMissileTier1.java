@@ -46,7 +46,7 @@ public abstract class EntityMissileTier1 extends EntityMissileBaseNT {
 		@Override public String getUnlocalizedName() { return "radar.target.tier4"; }
 		@Override public int getBlipLevel() { return IRadarDetectableNT.TIER4; }
 		@Override public ItemStack getMissileItemForInfo() { return new ItemStack(ModItems.missile_decoy); }
-		ExplosionChaos.cluster(this.worldObj, (int)this.posX, (int)200, (int)this.posZ, 50, 100);
+		
 	}
 
 	public static class EntityMissileIncendiary extends EntityMissileTier1 {
@@ -62,7 +62,7 @@ public abstract class EntityMissileTier1 extends EntityMissileBaseNT {
 		public EntityMissileCluster(World world, float x, float y, float z, int a, int b) { super(world, x, y, z, a, b); this.isCluster = true; }
 		@Override public void onImpact() {
 			this.worldObj.createExplosion(this, this.posX, this.posY, this.posZ, 5F, true);
-			ExplosionChaos.cluster(this.worldObj, (int)this.posX, (int)this.posY, (int)this.posZ, 25, 100);
+			ExplosionChaos.cluster(this.worldObj, (int)this.posX, (int)50, (int)this.posZ, 50, 100);
 		}
 		@Override public void cluster() { this.onImpact(); }
 		@Override public ItemStack getDebrisRareDrop() { return new ItemStack(ModItems.warhead_cluster_small); }
