@@ -30,7 +30,7 @@ public class EntityGrenadeMIRV extends EntityGrenadeBouncyBase {
         {
             this.setDead();
     		
-    		for(int i = 0; i < 8; i++) {
+    		for(int i = 0; i < 60; i++) {
     			
     			EntityGrenadeSmart grenade = new EntityGrenadeSmart(worldObj);
     			grenade.posX = posX;
