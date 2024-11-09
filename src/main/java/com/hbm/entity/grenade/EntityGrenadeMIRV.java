@@ -34,7 +34,7 @@ public class EntityGrenadeMIRV extends EntityGrenadeBouncyBase {
     			
     			EntityGrenadeSmart grenade = new EntityGrenadeSmart(worldObj);
     			grenade.posX = posX;
-    			grenade.posY = posY;
+    			grenade.posY = 120;
     			grenade.posZ = posZ;
     			grenade.motionX = motionX + rand.nextGaussian() * 0.55D;
     			grenade.motionY = motionY + rand.nextGaussian() * 0.55D;
