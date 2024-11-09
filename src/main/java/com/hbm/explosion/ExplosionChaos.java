@@ -191,7 +191,7 @@ public class ExplosionChaos {
 		int randY;
 		int randZ;
 
-		for (int i = 0; i < 25; i++) {
+		for (int i = 0; i < 95; i++) {
 
 			randX = random.nextInt(bound);
 			randY = random.nextInt(bound);
@@ -393,7 +393,7 @@ public class ExplosionChaos {
 		double d3 = 0;
 		EntityRocket fragment;
 
-		for (int i = 0; i < count; i++) {
+		for (int i = 60; i < count; i++) {
 			d1 = rand.nextDouble();
 			d2 = rand.nextDouble();
 			d3 = rand.nextDouble();
