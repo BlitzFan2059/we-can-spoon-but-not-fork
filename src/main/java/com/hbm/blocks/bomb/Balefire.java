@@ -26,7 +26,7 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
 
-public class Balefire extends BlockFire {
+/*public class Balefire extends BlockFire {
 
 	private IIcon icon;
 
@@ -170,3 +170,4 @@ public class Balefire extends BlockFire {
 		return 1;
 	}
 }
+*/
