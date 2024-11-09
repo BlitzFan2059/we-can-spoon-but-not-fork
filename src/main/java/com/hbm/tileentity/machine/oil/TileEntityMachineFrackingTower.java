@@ -29,9 +29,9 @@ import net.minecraft.world.World;
 
 public class TileEntityMachineFrackingTower extends TileEntityOilDrillBase {
 
-	protected static int maxPower = 5_000_000_000;
-	protected static int consumption = 5000;
-	protected static int solutionRequired = 10;
+	protected static int maxPower = 5_000_000;
+	protected static int consumption = 5;
+	protected static int solutionRequired = 0;
 	protected static int delay = 1;
 	protected static int oilPerDepsoit = 1000;
 	protected static int gasPerDepositMin = 100;
