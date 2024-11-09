@@ -9,7 +9,7 @@ public class BombConfig {
 	public static int boyRadius = 120;
 	public static int manRadius = 175;
 	public static int mikeRadius = 250;
-	public static int tsarRadius = 500;
+	public static int tsarRadius = 5;
 	public static int prototypeRadius = 150;
 	public static int fleijaRadius = 50;
 	public static int soliniumRadius = 150;
