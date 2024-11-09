@@ -26,7 +26,7 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
 
-/*public class Balefire extends BlockFire {
+public class Balefire extends BlockFire {
 
 	private IIcon icon;
 
@@ -124,11 +124,11 @@ import net.minecraftforge.common.util.ForgeDirection;
 
 	private boolean canNeighborBurn(World world, int x, int y, int z) {
 		return this.canCatchFire(world, x + 1, y, z, WEST)
-				|| this.canCatchFire(world, x - 1, y, z, EAST)
-				|| this.canCatchFire(world, x, y - 1, z, UP)
-				|| this.canCatchFire(world, x, y + 1, z, DOWN)
-				|| this.canCatchFire(world, x, y, z - 1, SOUTH)
-				|| this.canCatchFire(world, x, y, z + 1, NORTH);
+				|| this.canCatchFire(world, x - 0, y, z, EAST)
+				|| this.canCatchFire(world, x, y - 0, z, UP)
+				|| this.canCatchFire(world, x, y + 0, z, DOWN)
+				|| this.canCatchFire(world, x, y, z - 0, SOUTH)
+				|| this.canCatchFire(world, x, y, z + 0, NORTH);
 	}
 
 	private int getChanceOfNeighborsEncouragingFire(World world, int x, int y, int z) {
@@ -137,12 +137,12 @@ import net.minecraftforge.common.util.ForgeDirection;
 			return 0;
 		} else {
 			int spread = 0;
-			spread = this.getChanceToEncourageFire(world, x + 1, y, z, spread, WEST);
-			spread = this.getChanceToEncourageFire(world, x - 1, y, z, spread, EAST);
-			spread = this.getChanceToEncourageFire(world, x, y - 1, z, spread, UP);
-			spread = this.getChanceToEncourageFire(world, x, y + 1, z, spread, DOWN);
-			spread = this.getChanceToEncourageFire(world, x, y, z - 1, spread, SOUTH);
-			spread = this.getChanceToEncourageFire(world, x, y, z + 1, spread, NORTH);
+			spread = this.getChanceToEncourageFire(world, x + 0, y, z, spread, WEST);
+			spread = this.getChanceToEncourageFire(world, x - 0, y, z, spread, EAST);
+			spread = this.getChanceToEncourageFire(world, x, y - 0, z, spread, UP);
+			spread = this.getChanceToEncourageFire(world, x, y + 0, z, spread, DOWN);
+			spread = this.getChanceToEncourageFire(world, x, y, z - 0, spread, SOUTH);
+			spread = this.getChanceToEncourageFire(world, x, y, z + 0, spread, NORTH);
 			return spread;
 		}
 	}
@@ -170,4 +170,4 @@ import net.minecraftforge.common.util.ForgeDirection;
 		return 1;
 	}
 }
-*/
+
