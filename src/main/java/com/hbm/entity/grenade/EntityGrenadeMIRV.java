@@ -34,11 +34,12 @@ public class EntityGrenadeMIRV extends EntityGrenadeBouncyBase {
     			
     			EntityGrenadeSmart grenade = new EntityGrenadeSmart(worldObj);
     			grenade.posX = posX;
-    			grenade.posY = 120;
+    			
+			grenade.posY = grenade.posY + 100;
     			grenade.posZ = posZ;
-    			grenade.motionX = motionX + rand.nextGaussian() * 0.55D;
-    			grenade.motionY = motionY + rand.nextGaussian() * 0.55D;
-    			grenade.motionZ = motionZ + rand.nextGaussian() * 0.55D;
+    			grenade.motionX = motionX + rand.nextGaussian() * 1.55D;
+    			grenade.motionY = motionY + rand.nextGaussian() * 1.55D;
+    			grenade.motionZ = motionZ + rand.nextGaussian() * 1.55D;
     			grenade.ticksExisted = 10;
     			
     			worldObj.spawnEntityInWorld(grenade);
@@ -53,6 +54,6 @@ public class EntityGrenadeMIRV extends EntityGrenadeBouncyBase {
 
 	@Override
 	protected double getBounceMod() {
-		return 0.25D;
+		return 1.25D;
 	}
 }
