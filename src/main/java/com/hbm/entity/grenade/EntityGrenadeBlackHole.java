@@ -30,9 +30,9 @@ public class EntityGrenadeBlackHole extends EntityGrenadeBouncyBase
         if (!this.worldObj.isRemote)
         {
             this.setDead();
-            this.worldObj.createExplosion(this, this.posX, this.posY, this.posZ, 1.5F, true);
+            this.worldObj.createExplosion(this, this.posX, this.posY, this.posZ, 64.5F, true);
 
-        	EntityBlackHole bl = new EntityBlackHole(this.worldObj, 1.5F);
+        	EntityBlackHole bl = new EntityBlackHole(this.worldObj, 64.5F);
         	bl.posX = this.posX;
         	bl.posY = this.posY;
         	bl.posZ = this.posZ;
