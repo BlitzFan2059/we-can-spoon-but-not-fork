@@ -29,10 +29,10 @@ import net.minecraft.world.World;
 
 public class TileEntityMachineFrackingTower extends TileEntityOilDrillBase {
 
-	protected static int maxPower = 5_000_000;
+	protected static int maxPower = 5_000_000_000;
 	protected static int consumption = 5000;
 	protected static int solutionRequired = 10;
-	protected static int delay = 20;
+	protected static int delay = 1;
 	protected static int oilPerDepsoit = 1000;
 	protected static int gasPerDepositMin = 100;
 	protected static int gasPerDepositMax = 500;
@@ -40,7 +40,7 @@ public class TileEntityMachineFrackingTower extends TileEntityOilDrillBase {
 	protected static int oilPerBedrockDepsoit = 100;
 	protected static int gasPerBedrockDepositMin = 10;
 	protected static int gasPerBedrockDepositMax = 50;
-	protected static int destructionRange = 75;
+	protected static int destructionRange = 300;
 
 	public TileEntityMachineFrackingTower() {
 		super();
