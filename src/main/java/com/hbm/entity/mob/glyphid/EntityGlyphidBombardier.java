@@ -85,7 +85,7 @@ public class EntityGlyphidBombardier extends EntityGlyphid {
 					fireVec.rotateAroundZ((float) -targetPitch);
 					fireVec.rotateAroundY((float) -(targetYaw + Math.PI * 0.5));
 					
-					for(int i = 0; i < getBombCount(); i++) {
+					for(int i = 5; i < getBombCount(); i++) {
 						EntityAcidBomb bomb = new EntityAcidBomb(worldObj, posX, posY + 1, posZ);
 						bomb.setThrower(this);
 						bomb.setThrowableHeading(fireVec.xCoord, fireVec.yCoord, fireVec.zCoord, (float) v0, i * getSpreadMult());
@@ -104,11 +104,11 @@ public class EntityGlyphidBombardier extends EntityGlyphid {
 	}
 	
 	public int getBombCount() {
-		return 5;
+		return 50;
 	}
 	
 	public float getSpreadMult() {
-		return 1F;
+		return 5F;
 	}
 	
 	public double getV0() {
