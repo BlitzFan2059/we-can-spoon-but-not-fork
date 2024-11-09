@@ -21,7 +21,7 @@ public class ExplosionBalefire
 	private int shell;
 	private int leg;
 	private int element;
-	
+	/*
 	public void saveToNbt(NBTTagCompound nbt, String name) {
 		nbt.setInteger(name + "posX", posX);
 		nbt.setInteger(name + "posY", posY);
@@ -64,9 +64,9 @@ public class ExplosionBalefire
 		this.radius2 = this.radius * this.radius;
 
 		this.nlimit = this.radius2 * 4;
-	}
+	} 
 	
-	public boolean update() {
+	/*public boolean update() {
 		
 		if(n == 0) return true;
 		
@@ -82,7 +82,7 @@ public class ExplosionBalefire
 		this.lastposZ = this.leg == 0 ? this.element : this.leg == 1 ? this.shell : this.leg == 2 ? -this.element : -this.shell;
 		this.n++;
 		return this.n > this.nlimit;
-	}
+	} 
 
 	private void breakColumn(int x, int z)
 	{
@@ -126,7 +126,7 @@ public class ExplosionBalefire
 					worldObj.setBlock(pX, i, pZ, ModBlocks.sellafield_slaked);
 			}
 		}
-	}
+	}*/
 
 	/*private void breakColumn(int x, int z)
 	{
