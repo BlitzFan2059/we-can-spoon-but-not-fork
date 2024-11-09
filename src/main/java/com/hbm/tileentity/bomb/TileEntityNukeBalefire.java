@@ -50,9 +50,9 @@ public class TileEntityNukeBalefire extends TileEntityMachineBase implements IGU
 					worldObj.playSoundEffect(xCoord, yCoord, zCoord, "hbm:weapon.fstbmbPing", 5.0F, 1.0F);
 			}
 			
-			/*if(timer <= 0) {
+			if(timer <= 0) {
 				explode();
-			} */
+			} 
 			
 			NBTTagCompound data = new NBTTagCompound();
 			data.setInteger("timer", timer);
@@ -114,7 +114,7 @@ public class TileEntityNukeBalefire extends TileEntityMachineBase implements IGU
 		return 0;
 	}
 	
-	/*public void explode() {
+	public void explode() {
 		
 		for(int i = 0; i < slots.length; i++)
 			slots[i] = null;
@@ -128,7 +128,7 @@ public class TileEntityNukeBalefire extends TileEntityMachineBase implements IGU
 		bf.destructionRange = (int) 250;
 		worldObj.spawnEntityInWorld(bf);
 		EntityNukeTorex.statFacBale(worldObj, xCoord + 0.5, yCoord + 0.5, zCoord + 0.5, 250);
-	} */
+	} 
 	
 	public String getMinutes() {
 		
