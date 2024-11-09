@@ -35,14 +35,14 @@ public class EntityBlackHole extends Entity {
 
 	public EntityBlackHole(World world, float size) {
 		this(world);
-		this.dataWatcher.updateObject(32, size);
+		this.dataWatcher.updateObject(16, size);
 	}
 	
 	@Override
 	public void onUpdate() {
 		super.onUpdate();
 		
-		float size = this.dataWatcher.getWatchableObjectFloat(32);
+		float size = this.dataWatcher.getWatchableObjectFloat(16);
 		
 		if(!worldObj.isRemote) {
 			for(int k = 0; k < size * 2; k++) {
@@ -158,7 +158,7 @@ public class EntityBlackHole extends Entity {
 
 	@Override
 	protected void entityInit() {
-		this.dataWatcher.addObject(16, 0.5F);
+		this.dataWatcher.addObject(16, 64.0F);
 	}
 
 	@Override
